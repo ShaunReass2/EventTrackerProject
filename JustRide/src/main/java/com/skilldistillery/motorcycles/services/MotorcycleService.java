@@ -8,7 +8,12 @@ public interface MotorcycleService {
 	
 	List<Motorcycle> allMotorcycles(); 
 	
-	// creating 
-	// deleting 
+	Motorcycle findById (Integer id);
+	
+	Motorcycle update (Motorcycle m);
+	
+	Motorcycle create (Motorcycle m);
+	
+	boolean delete (int id);
 
 }
