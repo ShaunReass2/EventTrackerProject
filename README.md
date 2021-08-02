@@ -29,8 +29,8 @@ Please note, the table below can be useful for understanding the REST Endpoints 
 
 ## REST Endpoints
 
-|        |                   |   Request Body    |        Response Body        |
-| Method |        URI        |(some abbreviated) |     (some abbreviated)      |
+
+| Method |        URI        |Request Body (some abbreviated) | Response Body (some abbreviated) |
 | :---:  |       :---:       |       :---:       |            :---:            |
 |        |                   |                   |                             |
 |  GET   | `/api/motorcycles`|                   | All motorcycles displayed   |
