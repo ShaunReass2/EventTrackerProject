@@ -13,23 +13,23 @@
 |--------|-------------------|-------------------|-----------------------------|
 |  GET   | `/api/motorcycles`|                   | All motorcycles displayed   |
 |  GET   | `/api/motorcycle/ |                   | Single motorcycle displayed |
-|        |        {id}`      |                   |                             |
-|        |                   | "name": STRING    |        "id": INT            |
-|        |                   | "year": INT       |      "name": STRING         |
-|        |                   | "make": STRING    |      "year": INT            |
-|        |                   | "mode": STRING    |      "make": STRING         |
-|        |                   | "weight": INT     |      "mode": STRING         |
-|        |                   | "load": INT       |      "weight": INT          |
-|  POST  | `/api/motorcycle` | "fuelCap": DOUBLE |        "load": INT          |
-|        |                   | "fuelCon": DOUBLE |    "fuelCap": DOUBLE        |
-|        |                   | "range": INT      |    "fuelCon": DOUBLE        |
-|        |                   | "PSI": STRING     |       "range": INT          |
-|        |                   | "R-Name": STRING  |        "PSI": STRING        |
-|        |                   | "country": STRING |      "R-Name": STRING       |
-|        |                   | "region": STRING  |     "country": STRING       |
-|        |                   | "R-Length": INT   |     "region": STRING        |
-|        |                   | "comments": STRING|      "R-Length": INT        |
-|        |                   |                   |    "comments": STRING       |
+                  {id}`                                                         
+|        |                   |   "name": STRING  |         "id": INT           |
+                               "year": INT             "name": STRING         
+                               "make": STRING          "year": INT            
+                              "mode": STRING          "make": STRING         
+                              "weight": INT           "mode": STRING         
+                              "load": INT             "weight": INT          
+  POST   `/api/motorcycle`    "fuelCap": DOUBLE         "load": INT          
+                              "fuelCon": DOUBLE     "fuelCap": DOUBLE        
+                              "range": INT          "fuelCon": DOUBLE        
+                              "PSI": STRING            "range": INT          
+                              "R-Name": STRING          "PSI": STRING        
+                              "country": STRING       "R-Name": STRING       
+                              "region": STRING       "country": STRING       
+                              "R-Length": INT        "region": STRING        
+                              "comments": STRING      "R-Length": INT        
+                                                    "comments": STRING       
 |        |                   | "id": INT         |        "id": INT            |
 |        |                   | "name": STRING    |       "name": STRING        |
 |        |                   | "year": INT       |        "year": INT          |
