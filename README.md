@@ -35,8 +35,8 @@ Please note, the table below can be useful for understanding the REST Endpoints 
 |        |                   |                   |                             |
 |  GET   | `/api/motorcycles`|                   | All motorcycles displayed   |
 |        |                   |                   |                             |
-|  GET   | `/api/motorcycle/ |                   | Single motorcycle displayed |
-|        |         {id}`     |                   |                             |
+|  GET   | `/api/motorcycle/{id}` |                   | Single motorcycle displayed |
+|        |                   |                   |                             |
 |        |                   |                   |                             |   
 |        |                   | "name": STRING    |         "id": INT           |
 |        |                   | "year": INT       |      "name": STRING         |
@@ -72,8 +72,8 @@ Please note, the table below can be useful for understanding the REST Endpoints 
 |        |                   | "R-Length": INT   |       "R-Length": INT       |
 |        |                   | "comments": STRING|      "comments": STRING     |
 |        |                   |                   |                             |
-| DELETE | `/api/motorcycle/ |                   |  Single motorcycle deleted  |
-|        |       {id}`       |                   |                             |
+| DELETE | `/api/motorcycle/{id}` |                   |  Single motorcycle deleted  |
+|        |                   |                   |                             |
 
 ### Challenges
 
