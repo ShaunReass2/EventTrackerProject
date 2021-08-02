@@ -11,7 +11,7 @@
 |        |                   |   Request Body    |        Response Body        |
 | Method |        URI        |(some abbreviated) |     (some abbreviated)      |
 | :---:  |       :---:       |       :---:       |            :---:            |
-|--------|-------------------|-------------------|-----------------------------|
+-        -                   -                   -                             -
 |  GET   | `/api/motorcycles`|                   | All motorcycles displayed   |
 |        |                   |                   |                             |
 |  GET   | `/api/motorcycle/ |                   | Single motorcycle displayed |
