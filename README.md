@@ -12,10 +12,8 @@
 | Method |        URI        |(some abbreviated) |     (some abbreviated)      |
 |--------|-------------------|-------------------|-----------------------------|
 |  GET   | `/api/motorcycles`|                   | All motorcycles displayed   |
-
 |  GET   | `/api/motorcycle/ |                   | Single motorcycle displayed |
 |        |        {id}`      |                   |                             |
-
 |        |                   | "name": STRING    |        "id": INT            |
 |        |                   | "year": INT       |      "name": STRING         |
 |        |                   | "make": STRING    |      "year": INT            |
@@ -32,7 +30,6 @@
 |        |                   | "R-Length": INT   |     "region": STRING        |
 |        |                   | "comments": STRING|      "R-Length": INT        |
 |        |                   |                   |    "comments": STRING       |
-
 |        |                   | "id": INT         |        "id": INT            |
 |        |                   | "name": STRING    |       "name": STRING        |
 |        |                   | "year": INT       |        "year": INT          |
@@ -49,6 +46,5 @@
 |        |                   | "region": STRING  |      "region": STRING       |
 |        |                   | "R-Length": INT   |       "R-Length": INT       |
 |        |                   | "comments": STRING|      "comments": STRING     |
-
 | DELETE | `/api/motorcycle/ |                   |  Single motorcycle deleted  |
 |        |       {id}`       |                   |                             |
