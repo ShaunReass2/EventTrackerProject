@@ -74,3 +74,11 @@ Please note, the table below can be useful for understanding the REST Endpoints 
 |        |                   |                   |                             |
 | DELETE | `/api/motorcycle/ |                   |  Single motorcycle deleted  |
 |        |       {id}`       |                   |                             |
+
+### Challenges
+
+The main challenge in this portion of the project was not being familiar with some of the technologies used, mainly Postman.  After familiarizing myself with it, the testing process became much simpler.  Additionally, while using the repositories can save a lot of time and typing, it is not something which happens automatically.  "Connecting the dots" took some time and thought to get right.  
+
+###  Lessons Learned
+
+When I first started planning this project and designing the database schema, my initial thought was to include multiple tables.  Ultimately, based on guidance from instructors, I chose a single table database was best for the amount of time allotted.  This saved a lot of time during this portion of the project, and as the application progresses in subsequent weekend portions, I have no doubt it will become even more apparent a single table database was a good choice, while still allowing for a rich application.  
