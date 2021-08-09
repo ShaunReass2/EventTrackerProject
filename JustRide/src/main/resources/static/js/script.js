@@ -14,7 +14,9 @@ init();
 }); 
 
 function init() {
+    document.getElementById("singleMotorcycle").style.visibility = "hidden";
     loadMotorcycles(); 
+   
 }
 
 function loadMotorcycles() {
@@ -36,7 +38,9 @@ function displayMotorcycles(motorcycles) {
     for (const motorcycle of motorcycles) {
         let tr = document.createElement('tr'); 
         let td = document.createElement('td'); 
-        td.textContent = motorcycle.name; 
+        const btn ="<button>"+motorcycle.name + "</button>";
+       
+        td.innerHTML =   btn;
         tr.appendChild(td); 
         tr.addEventListener('click', function() {
             displaySingleMotorcycle(motorcycle)
@@ -47,7 +51,7 @@ function displayMotorcycles(motorcycles) {
 
 function submitForm() {
 	var requestBody = {
-		 "name": document.getElementById('name').value,
+		"name": document.getElementById('name').value,
         "year": parseInt(document.getElementById('year').value),
         "make": document.getElementById('make').value,
         "model": document.getElementById('model').value,
@@ -90,7 +94,7 @@ function submitForm() {
 function displaySingleMotorcycle(motorcycle) {
     let singleMotorcycle = document.getElementById('singleMotorcycle'); 
     singleMotorcycle.innerHTML = "";
-
+	
     let span = document.createElement('div');
     span.textContent = motorcycle.name; 
     singleMotorcycle.appendChild(span); 
@@ -163,6 +167,7 @@ function displaySingleMotorcycle(motorcycle) {
         deleteMotorcycle(motorcycle.id); 
     });
     singleMotorcycle.appendChild(deleteButton); 
+    document.getElementById("singleMotorcycle").style.visibility="visible";
 }
 
 function fillInForm(motorcycle) {
@@ -188,8 +193,8 @@ function fillInForm(motorcycle) {
 
 function updateMotorcycle() {
     var requestBody = {
-        "id": parseInt(document.getElementById('id').value),
-        "name": document.getElementById('name').value,
+       "id": parseInt(document.getElementById('id').value),
+       "name": document.getElementById('name').value,
        "year": parseInt(document.getElementById('year').value),
        "make": document.getElementById('make').value,
        "model": document.getElementById('model').value,

@@ -1,1 +1,87 @@
 @charset "UTF-8";
+
+
+
+
+	h3 {
+	padding-top: 100px;
+	padding-bottom: 20px;
+	}
+	
+	button {
+	width:200px;
+	}
+	
+	.tdClass {
+	border: 1px solid;
+	padding: 8x 10px;
+	padding-left:12px;
+	font-size: 14px;
+	border-radius: 50%;
+	background-color: gray;
+	}
+
+	html { 
+	background: url('https://revelwallpapers.net/media/wallpapers/motorcycle_road_2560x1600.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	z-index: -1;
+	} 
+	
+	#singleMotorcycle {
+	font-family: Arial, Helvetica, sans-serif;
+	color: white; 
+	font-size: 18px; 
+	}
+	
+	#createYourRide {
+	color: white; 
+	}
+	
+	#viewExistingRides {
+	color: black; 
+	}
+	
+	#rideSpecs {
+	color: white; 
+	}
+	
+	#aggregation {
+	font-family: Arial, Helvetica, sans-serif;
+	color: white; 
+	font-size: 16px; 
+	padding: 20px; 
+	} 
+	
+	.navImage {
+	background: url("photos/mkdirMoto.png") no-repeat center center fixed; 
+	}
+	
+/* 	form {
+		position: absolute;
+		left:10px;
+		top:200px;
+		padding: 100px;
+	}
+	
+	#motorcycleListTable{
+		position: absolute;
+		left: 450px;
+		top:299px;	
+		padding: 100px;
+	}
+	
+	/* img {
+	  position: absolute;
+	  left: 0px;
+	  top: 0px;
+	  z-index: -1;
+	} */
+	
+	
+	
+	
+	
+	
