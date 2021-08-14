@@ -1,0 +1,75 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Mkdir moto;</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.bmwmotorcycles.com/en/home.html#/filter-all">BMW</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.ktm.com/en-us.html">KTM</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Aggregate Data
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Total Aggregate Weight of Motorcycles: {{totalWeight}}</a>
+          <a class="dropdown-item" href="#">Total Aggregate Route Miles: {{totalMiles}}</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<img id="header-image" src="/assets/images/mkdirHeader.jpeg" />
+
+
+<!-- <div>
+  Total Aggregate Route Miles: {{totalMiles}}
+</div> -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm">
+<div>
+  <input placeholder="Name" type="text" [(ngModel)]='newMotorcycle.name'><br>
+  <input placeholder="Year" type="number" [(ngModel)]='newMotorcycle.year'><br>
+  Make: <input type="text" [(ngModel)]='newMotorcycle.make'><br>
+  Model: <input type="text" [(ngModel)]='newMotorcycle.model'><br>
+  Weight (pounds): <input type="number" [(ngModel)]='newMotorcycle.weightInPounds'><br>
+  Load Capacity: <input type="number" [(ngModel)]='newMotorcycle.loadCapacityInPounds'><br>
+  Fuel Capacity (gallons): <input type="number" [(ngModel)]='newMotorcycle.fuelCapacityInGallons'><br>
+  Fuel Consumption (mpg): <input type="number" [(ngModel)]='newMotorcycle.fuelConsumptionInMpg'><br>
+  Range (miles): <input type="number" [(ngModel)]='newMotorcycle.rangeInMiles'><br>
+  Tire Pressure (psi): <input type="text" [(ngModel)]='newMotorcycle.tirePressureInPsi'><br>
+  Route Name: <input type="text" [(ngModel)]='newMotorcycle.routeName'><br>
+  Route Country: <input type="text" [(ngModel)]='newMotorcycle.routeCountry'><br>
+  Route Region: <input type="text" [(ngModel)]='newMotorcycle.routeRegion'><br>
+  Route Length (miles): <input type="number" [(ngModel)]='newMotorcycle.routeLengthInMiles'><br>
+  Route Comments: <input type="text" [(ngModel)]='newMotorcycle.routeComments'><br>
+  <button [hidden]="showUpdateButton"(click)='create()'>Create</button><br>
+  <button [hidden]="!showUpdateButton"(click)='update()'>Update</button><br>
+  <button [hidden]="!showUpdateButton"(click)='delete()'>Delete</button><br>
+</div>
+</div>
+
+<div class="col-sm">
+  <div *ngFor="let motorcycle of motorcycles">
+  <button (click)="motorcycleClick(motorcycle)" >{{motorcycle.name}}</button><br>
+</div>
+</div>
+
+<div class="col-sm">
+  <div *ngIf="newMotorcycle.name">
+
+
+  Name: {{newMotorcycle.name}}<br>
+  Year: {{newMotorcycle.year}}
+</div>
+
+</div>
+</div>
+</div>
