@@ -1,19 +1,45 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <a class="navbar-brand" href="#">Mkdir moto;</a>
+<html>
+<body>
+
+<link rel="stylesheet" href="motorcycle-list.component.css">
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="background-color: black;">
+  <a class="navbar-brand" href="#">Track Your Ride</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="https://www.bmwmotorcycles.com/en/home.html#/filter-all">BMW</a>
+        <a class="nav-link" href="https://www.bmwmotorcycles.com/en/home.html#/filter-all">&nbsp;&nbsp;BMW&nbsp;&nbsp;</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="https://www.ktm.com/en-us.html">KTM</a>
+        <a class="nav-link" href="https://www.ktm.com/en-us.html">&nbsp;&nbsp;KTM&nbsp;&nbsp;</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.kawasaki.com/en-us/category/motorcycle/z">&nbsp;&nbsp;Kawasaki&nbsp;&nbsp;</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://powersports.honda.com/">&nbsp;&nbsp;Honda&nbsp;&nbsp;</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.triumphmotorcycles.com/">&nbsp;&nbsp;Triumph&nbsp;&nbsp;</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.yamahamotorsports.com/motorcycle">&nbsp;&nbsp;Yamaha&nbsp;&nbsp;</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.ducati.com/us/en/home">&nbsp;&nbsp;Ducati&nbsp;&nbsp;</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.aprilia.com/en_EN/">&nbsp;&nbsp;Aprilia&nbsp;&nbsp;</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.harley-davidson.com/us/en/index.html?source_cd=SEM_Retention_PPC&_cr=ppc|GOOGLE|Core_Brand_E|Brand|harley-davidson&gclid=CjwKCAjw092IBhAwEiwAxR1lRuvg-NQBAm45rA0WkCjwkZKhKVynRWjzr40o0lZ4KH8jH8w4nivbDhoCQp4QAvD_BwE&gclsrc=aw.ds">&nbsp;&nbsp;Harley-Davidson&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
       </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Aggregate Data
+         Aggregate Data
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
           <a class="dropdown-item" href="#">Total Aggregate Weight of Motorcycles: {{totalWeight}}</a>
@@ -24,52 +50,83 @@
   </div>
 </nav>
 
-<img id="header-image" src="/assets/images/mkdirHeader.jpeg" />
-
-
-<!-- <div>
-  Total Aggregate Route Miles: {{totalMiles}}
-</div> -->
-
-<div class="container">
-  <div class="row">
-    <div class="col-sm">
 <div>
-  <input placeholder="Name" type="text" [(ngModel)]='newMotorcycle.name'><br>
-  <input placeholder="Year" type="number" [(ngModel)]='newMotorcycle.year'><br>
-  Make: <input type="text" [(ngModel)]='newMotorcycle.make'><br>
-  Model: <input type="text" [(ngModel)]='newMotorcycle.model'><br>
-  Weight (pounds): <input type="number" [(ngModel)]='newMotorcycle.weightInPounds'><br>
-  Load Capacity: <input type="number" [(ngModel)]='newMotorcycle.loadCapacityInPounds'><br>
-  Fuel Capacity (gallons): <input type="number" [(ngModel)]='newMotorcycle.fuelCapacityInGallons'><br>
-  Fuel Consumption (mpg): <input type="number" [(ngModel)]='newMotorcycle.fuelConsumptionInMpg'><br>
-  Range (miles): <input type="number" [(ngModel)]='newMotorcycle.rangeInMiles'><br>
-  Tire Pressure (psi): <input type="text" [(ngModel)]='newMotorcycle.tirePressureInPsi'><br>
-  Route Name: <input type="text" [(ngModel)]='newMotorcycle.routeName'><br>
-  Route Country: <input type="text" [(ngModel)]='newMotorcycle.routeCountry'><br>
-  Route Region: <input type="text" [(ngModel)]='newMotorcycle.routeRegion'><br>
-  Route Length (miles): <input type="number" [(ngModel)]='newMotorcycle.routeLengthInMiles'><br>
-  Route Comments: <input type="text" [(ngModel)]='newMotorcycle.routeComments'><br>
-  <button [hidden]="showUpdateButton"(click)='create()'>Create</button><br>
-  <button [hidden]="!showUpdateButton"(click)='update()'>Update</button><br>
-  <button [hidden]="!showUpdateButton"(click)='delete()'>Delete</button><br>
+  <!-- <img id="view-image-motoLeft" src="/assets/images/motoFaceRight.jpeg" /> -->
+ <img id="header-image" src="/assets/images/mkdirMotoHeader.jpeg" />
+</div>
+
+    <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <div>
+                <img id="createColHeader" src="/assets/images/create.jpeg" />
+                <img id="createColHeader" src="/assets/images/update.jpeg" />
+                <img id="createColHeader" src="/assets/images/delete.jpeg" />
+              </div>
+              <div>
+                <input placeholder="Name" type="text" [(ngModel)]='newMotorcycle.name'><br>
+                <input placeholder="Year" type="number" [(ngModel)]='newMotorcycle.year'><br>
+                <input placeholder="Make" type="text" [(ngModel)]='newMotorcycle.make'><br>
+                <input placeholder="Model" type="text" [(ngModel)]='newMotorcycle.model'><br>
+                <input placeholder="Weight (lbs)" type="number" [(ngModel)]='newMotorcycle.weightInPounds'><br>
+                <input placeholder="Load Capacity (lbs)" type="number" [(ngModel)]='newMotorcycle.loadCapacityInPounds'><br>
+                <input placeholder="Fuel Capacity (gal)" type="number" [(ngModel)]='newMotorcycle.fuelCapacityInGallons'><br>
+                <input placeholder="Fuel Consumption (mpg)" type="number" [(ngModel)]='newMotorcycle.fuelConsumptionInMpg'><br>
+                <input placeholder="Range (miles)" type="number" [(ngModel)]='newMotorcycle.rangeInMiles'><br>
+                <input placeholder="Tire Pressure (psi)" type="text" [(ngModel)]='newMotorcycle.tirePressureInPsi'><br>
+                <input placeholder="Route Name" type="text" [(ngModel)]='newMotorcycle.routeName'><br>
+                <input placeholder="Route Country" type="text" [(ngModel)]='newMotorcycle.routeCountry'><br>
+                <input placeholder="Route Region" type="text" [(ngModel)]='newMotorcycle.routeRegion'><br>
+                <input placeholder="Route Length (miles)" type="number" [(ngModel)]='newMotorcycle.routeLengthInMiles'><br>
+                <input placeholder="Route Comments" type="text" [(ngModel)]='newMotorcycle.routeComments'><br>
+                <!-- <button id="createButton" type="image" src="/assets/images/createButton.jpeg" alt="Submit" width="50" height="50"></button> -->
+                <button id="createButton" [hidden]="showUpdateButton"(click)='create()'>Create</button><br>
+                <button [hidden]="!showUpdateButton"(click)='update()'>Update</button><br>
+                <button [hidden]="!showUpdateButton"(click)='delete()'>Delete</button><br>
+              </div>
+            </div>
+
+      <div class="col-sm">
+        <div>
+        <img id="viewColHeader" src="/assets/images/viewBoxOpenRight.jpeg" />
+        <img id="viewColHeader" src="/assets/images/viewBoxOpenCenter.jpeg" />
+        <img id="viewColHeader" src="/assets/images/viewBoxOpenLeft.jpeg" />
+        <div *ngFor="let motorcycle of motorcycles">
+          <button (click)="motorcycleClick(motorcycle)" >{{motorcycle.name}}</button><br>
+        </div>
+        <img id="view-image-motoLeft" src="/assets/images/motoFaceRight.jpeg" />
+      </div>
+        <br>
+        <br>
+        <br>
+      </div>
+
+    <div class="col-sm" id="specDisplay">
+      <div *ngIf="newMotorcycle.name">
+        <img id="deetsColHeader" src="/assets/images/deetsBoxOpenRight.jpeg" />
+        <img id="deetsColHeader" src="/assets/images/deetsBoxOpenCenter.jpeg" />
+        <img id="deetsColHeader" src="/assets/images/deetsBoxOpenLeft.jpeg" />
+       <strong>Name: &nbsp; &nbsp;</strong> {{newMotorcycle.name}}<br>
+       <strong>Year: &nbsp; &nbsp;</strong> {{newMotorcycle.year}}<br>
+       <strong>Make: &nbsp; &nbsp;</strong> {{newMotorcycle.make}}<br>
+       <strong>Model: &nbsp; &nbsp;</strong> {{newMotorcycle.model}}<br>
+       <strong>Weight: &nbsp; &nbsp;</strong> {{newMotorcycle.weightInPounds}} pounds<br>
+       <strong>Load Capacity: &nbsp; &nbsp;</strong> {{newMotorcycle.loadCapacityInPounds}} pounds<br>
+       <strong>Fuel Capacity: &nbsp; &nbsp;</strong> {{newMotorcycle.fuelCapacityInGallons}} gallons<br>
+       <strong>Fuel Consumption: &nbsp; &nbsp;</strong> {{newMotorcycle.fuelConsumptionInMpg}} mpg<br>
+       <strong>Range: &nbsp; &nbsp;</strong> {{newMotorcycle.rangeInMiles}} miles<br>
+      <strong>Tire Pressure: &nbsp; &nbsp;</strong> {{newMotorcycle.tirePressureInPsi}} psi<br>
+      <strong>Route Name: &nbsp; &nbsp;</strong> {{newMotorcycle.routeName}}<br>
+      <strong>Route Country: &nbsp; &nbsp;</strong> {{newMotorcycle.routeCountry}}<br>
+      <strong>Route Region: &nbsp; &nbsp;</strong> {{newMotorcycle.routeRegion}}<br>
+      <strong>Route Length: &nbsp; &nbsp;</strong> {{newMotorcycle.routeLengthInMiles}} miles<br>
+      <strong>Route Comments: &nbsp; &nbsp;</strong> {{newMotorcycle.routeComments}}<br>
+    </div>
+
+  </div>
 </div>
 </div>
 
-<div class="col-sm">
-  <div *ngFor="let motorcycle of motorcycles">
-  <button (click)="motorcycleClick(motorcycle)" >{{motorcycle.name}}</button><br>
-</div>
-</div>
-
-<div class="col-sm">
-  <div *ngIf="newMotorcycle.name">
-
-
-  Name: {{newMotorcycle.name}}<br>
-  Year: {{newMotorcycle.year}}
-</div>
-
-</div>
-</div>
-</div>
+</body>
+<br>
+</html>

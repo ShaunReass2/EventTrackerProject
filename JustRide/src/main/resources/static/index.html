@@ -1,75 +1,88 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta charset="UTF-8">
-<title>Just Ride the Thing</title>
+	<meta charset="UTF-8">
+	<title>Just Ride the Thing</title>
 
-<script type="text/javascript" src="js/script.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 
-<link rel = "stylesheet" href = "style.css">
+	<link rel="stylesheet" href="style.css">
 
-<!--  Link Bootstrap -->
+	<!--  Link Bootstrap -->
 
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
 </head>
 
-<body style="background: url('IMG_0015.PNG')">
+<body>     <!--    style="background: url('IMG_0015.PNG')" -->
 
-		<nav id = "navBar"> <!-- class="navbar navbar-light bg-light" -->
-		<img src=""/>
-			<span id = "aggregation" class="navbar-brand mb-0 h1">Aggregation Data: 
-				<br>
-				Total Creations: <span id = "totalCreations"></span>
-				<br>
-				Total Updates: <span id = "totalUpdates"></span>
-				<br>
-				Total Deletions: <span id = "totalDeletions"></span>
-			</span>
-			<div class = "navImage"></div>
-	  	</nav>
-	
-	<div class = "container">
-	<div class = "row">
-	<div class = "col-sm">
-	<form id = "submit">
-		<h3 id = "createYourRide">Create Your Ride</h3>
-		<div><input name = "id" id = "id" hidden/></div>
-		<div><input style = "width: 250px" name = "name" id = "name" placeholder = "Motorcycle Name"/></div>
-		<div><input style = "width: 250px" name = "year" id = "year" placeholder = "Year"/></div>
-		<div><input style = "width: 250px" name = "make" id = "make" placeholder = "Make"/></div>
-		<div><input style = "width: 250px" name = "model" id = "model" placeholder = "Model"/></div>
-		<div><input style = "width: 250px" name = "weightInPounds" id = "weightInPounds" placeholder = "Weight (lbs)"/></div>
-		<div><input style = "width: 250px" name = "loadCapacityInPounds" id = "loadCapacityInPounds" placeholder = "Load Capacity (lbs)"/></div>
-		<div><input style = "width: 250px" name = "fuelCapacityInGallons" id = "fuelCapacityInGallons" placeholder = "Fuel Capacity (gallons)"/></div>
-		<div><input style = "width: 250px" name = "fuelConsumptionInMpg" id = "fuelConsumptionInMpg" placeholder = "Fuel Consumption (mpg)"/></div>
-		<div><input style = "width: 250px" name = "rangeInMiles" id = "rangeInMiles" placeholder = "rangeInMiles"/></div>
-		<div><input style = "width: 250px" name = "tirePressureInPsi" id = "tirePressureInPsi" placeholder = "Tire Pressure (psi)"/></div>
-		<div><input style = "width: 250px" name = "routeName" id = "routeName" placeholder = "Route Name"/></div>
-		<div><input style = "width: 250px" name = "routeCountry" id = "routeCountry" placeholder = "Route Country"/></div>
-		<div><input style = "width: 250px" name = "routeRegion" id = "routeRegion" placeholder = "Route Region"/></div>
-		<div><input style = "width: 250px" name = "routeLengthInMiles" id = "routeLengthInMiles" placeholder = "Route Length (miles)"></div>
-		<div><input style = "width: 250px" name = "routeComments" id = "routeComments" placeholder = "Route Comments"/></div>
-		<div><input type = "button" onclick="submitForm()" value = "Create" id = "submitF"/></div>
-		<div><input type = "button" onclick="updateMotorcycle()" value = "Update" hidden id = "update"/></div>
-	</form>
+	<nav id="navBar">
+		<!-- class="navbar navbar-light bg-light" -->
+		<img src="" />
+		<span id="aggregation" class="navbar-brand mb-0 h1">Aggregation Data:
+			<br>
+			Total Creations: <span id="totalCreations"></span>
+			<br>
+			Total Updates: <span id="totalUpdates"></span>
+			<br>
+			Total Deletions: <span id="totalDeletions"></span>
+		</span>
+		<div class="navImage"></div>
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm">
+				<form id="submit">
+					<h3 id="createYourRide">Create Your Ride</h3>
+					<div><input name="id" id="id" hidden /></div>
+					<div><input style="width: 250px" name="name" id="name" placeholder="Motorcycle Name" /></div>
+					<div><input style="width: 250px" name="year" id="year" placeholder="Year" /></div>
+					<div><input style="width: 250px" name="make" id="make" placeholder="Make" /></div>
+					<div><input style="width: 250px" name="model" id="model" placeholder="Model" /></div>
+					<div><input style="width: 250px" name="weightInPounds" id="weightInPounds"
+							placeholder="Weight (lbs)" /></div>
+					<div><input style="width: 250px" name="loadCapacityInPounds" id="loadCapacityInPounds"
+							placeholder="Load Capacity (lbs)" /></div>
+					<div><input style="width: 250px" name="fuelCapacityInGallons" id="fuelCapacityInGallons"
+							placeholder="Fuel Capacity (gallons)" /></div>
+					<div><input style="width: 250px" name="fuelConsumptionInMpg" id="fuelConsumptionInMpg"
+							placeholder="Fuel Consumption (mpg)" /></div>
+					<div><input style="width: 250px" name="rangeInMiles" id="rangeInMiles" placeholder="rangeInMiles" />
+					</div>
+					<div><input style="width: 250px" name="tirePressureInPsi" id="tirePressureInPsi"
+							placeholder="Tire Pressure (psi)" /></div>
+					<div><input style="width: 250px" name="routeName" id="routeName" placeholder="Route Name" /></div>
+					<div><input style="width: 250px" name="routeCountry" id="routeCountry"
+							placeholder="Route Country" /></div>
+					<div><input style="width: 250px" name="routeRegion" id="routeRegion" placeholder="Route Region" />
+					</div>
+					<div><input style="width: 250px" name="routeLengthInMiles" id="routeLengthInMiles"
+							placeholder="Route Length (miles)"></div>
+					<div><input style="width: 250px" name="routeComments" id="routeComments"
+							placeholder="Route Comments" /></div>
+					<div><input type="button" onclick="submitForm()" value="Create" id="submitF" /></div>
+					<div><input type="button" onclick="updateMotorcycle()" value="Update" hidden id="update" /></div>
+				</form>
+			</div>
+
+			<div class="col-sm">
+				<h3 id="viewExistingRides">View Existing Rides</h3>
+				<table id="motorcycleListTable"></table>
+			</div>
+
+			<div class="col-sm">
+				<h3 id="rideSpecs">Ride Specs</h3>
+				<div id="singleMotorcycle">
+				</div>
+			</div>
+
+		</div>
 	</div>
-	
-		<div class = "col-sm">
-		<h3 id = "viewExistingRides">View Existing Rides</h3>
-		<table id = "motorcycleListTable"></table>
-		</div>
-		
-		<div class = "col-sm"> 
-		<h3 id = "rideSpecs">Ride Specs</h3>
-		<div id = "singleMotorcycle">
-		</div>
-		</div>
-		
-	</div>	
-	</div>
-	
-<!-- 	<div id = "singleMotorcycle">
+
+	<!-- 	<div id = "singleMotorcycle">
 	</div> -->
 
 	<!-- <div>
@@ -78,11 +91,16 @@
 		<div>Total Deletions: <span id = "totalDeletions"></span></div>
 	</div> -->
 
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
 
 </body>
-</html>
 
-   
+</html>

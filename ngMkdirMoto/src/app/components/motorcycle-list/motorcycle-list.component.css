@@ -1,12 +1,93 @@
 
 #header-image {
-width: 100%;
+  width: 100%;
+  background: black;
 }
 
-button {
-	width:200px;
-	}
+  body {
+	background: url('https://revelwallpapers.net/media/wallpapers/motorcycle_road_2560x1600.jpg') no-repeat center center fixed;
+	-webkit-background-size: cover;
+	 -moz-background-size: cover;
+	 -o-background-size: cover;
+	 background-size: cover;
+	z-index: -1;
+  background-color: black;
+  overflow: hidden;
+ }
 
-  input {
-    width:200px;
-    }
+button {
+  width:331px;
+  align-content: center;
+  justify-content: center;
+}
+
+#createButton {
+  width:331px;
+  align-content: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+input {
+  width:331px;
+}
+
+#specDisplay {
+  color: aliceblue;
+}
+
+#createColHeader {
+width: 110px;
+height: 60px;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+#updateColHeader {
+  width: 110px;
+  height: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  }
+
+#deleteColHeader {
+  width: 110px;
+  height: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  }
+
+#viewColHeader {
+  width: 110px;
+  height: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  align-content: center;
+  justify-content: center;
+  }
+
+#deetsColHeader {
+  width: 110px;
+  height: 60px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  }
+
+#view-image-motoLeft {
+  width: 331px;
+  height: 180px;
+  margin-top: 25px;
+}
+
+/* body {
+  background-image: url("/assets/images/hildeHeadlight.jpeg");
+  background-color: black;
+ } */
+
+  /* #html {
+  background: url(https://revelwallpapers.net/media/wallpapers/motorcycle_road_2560x1600.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} */

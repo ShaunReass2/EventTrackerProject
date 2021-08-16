@@ -38,7 +38,7 @@ function displayMotorcycles(motorcycles) {
     for (const motorcycle of motorcycles) {
         let tr = document.createElement('tr'); 
         let td = document.createElement('td'); 
-        const btn ="<button>"+motorcycle.name + "</button>";
+        const btn ="<button>" + motorcycle.name + "</button>";
        
         td.innerHTML =   btn;
         tr.appendChild(td); 
